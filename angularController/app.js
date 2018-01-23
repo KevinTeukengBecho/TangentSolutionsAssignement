@@ -1,1 +1,1 @@
-var myApp = angular.module('myApp', [myApp.login]);
+var myApp = angular.module('myApp', ["myApp.Login"]);
