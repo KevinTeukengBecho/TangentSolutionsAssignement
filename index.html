@@ -56,11 +56,11 @@
                 <form name="loginform" id="loginform" action="index.html" method="post">
                     <p>
                         <label for="user_login">Username<br />
-                            <input type="text" name="log" id="user_login" class="input" value="demo" size="20" /></label>
+                            <input type="text" name="log" id="user_login" class="input" value="demo" size="20" ng-model="model.user_login" /></label>
                     </p>
                     <p>
                         <label for="user_pass">Password<br />
-                            <input type="password" name="pwd" id="user_pass" class="input" value="demo" size="20" /></label>
+                            <input type="password" name="pwd" id="user_pass" class="input" value="demo" size="20"  ng-model="model.user_pass" /></label>
                     </p>
                     <!-- <p class="forgetmenot"> -->
                         <!-- <label class="icheck-label form-label" for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" class="skin-square-orange" checked> Remember me</label> -->
@@ -71,6 +71,8 @@
                     <p class="submit">
                         <input  class="btn btn-orange btn-block" ng-click="login()" value="Sign In" />
                     </p>
+					
+					<p type="danger" style="text-align:center" ng-show="model.loginError">Username and/or Password Incorrect, Please try again </p>
                 </form>
 
                 <!-- <p id="nav"> -->
