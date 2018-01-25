@@ -34,6 +34,7 @@
 					if (typeof(Storage) !== "undefined") {
 						// Storing the token
 						sessionStorage.setItem("token", token);
+						window.location = 'dashboard.html'
 					
 					}
 					else{
