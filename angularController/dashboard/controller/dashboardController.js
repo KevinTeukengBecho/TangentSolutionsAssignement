@@ -3,7 +3,7 @@
 
 (function () {
 
-    var myApp_Dashboard= angular.module('myApp.Dashboard');
+    var myApp_Dashboard= angular.module('myApp');
     myApp_Dashboard.controller('DashboardCtrl', ['$rootScope', '$scope', '$log', 'DashboardService',
         function ($rootScope, $scope, $log, DashboardService) {
 			
@@ -51,7 +51,12 @@
 				window.location = 'index.html';
 			}			
 			
-			
+
+            //function when logging out
+			$scope.logout = function () {
+			    sessionStorage.removeItem("token");
+			    window.location = 'index.html'
+			}
 
 
         }]);

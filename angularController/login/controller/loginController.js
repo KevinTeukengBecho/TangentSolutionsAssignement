@@ -3,7 +3,7 @@
 
 (function () {
 
-    var myApp_Login= angular.module('myApp.Login');
+    var myApp_Login= angular.module('myApp');
     myApp_Login.controller('LoginCtrl', ['$rootScope', '$scope', '$log', 'LoginService',
         function ($rootScope, $scope, $log, LoginService) {
 			
@@ -34,7 +34,7 @@
 					if (typeof(Storage) !== "undefined") {
 						// Storing the token
 						sessionStorage.setItem("token", token);
-						window.location = 'dashboard.html'
+						window.location = 'dashboard.html#/'
 					
 					}
 					else{

@@ -6,7 +6,7 @@
 
     //debugger;
 
-    var LoginService = angular.module('myApp.Login');
+    var LoginService = angular.module('myApp');
     LoginService.factory('LoginService', ['$rootScope', '$http', '$log', function ($rootScope, $http, $log) {
 
         debugger;
