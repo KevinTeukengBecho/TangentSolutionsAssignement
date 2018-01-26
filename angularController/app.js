@@ -14,4 +14,9 @@ myApp.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function 
             url: '/profile',
             templateUrl: 'profile.html'
         })
+        .state('stat', {
+            name: 'stat',
+            url: '/stat',
+            templateUrl: 'stat.html'
+        })
 }]);

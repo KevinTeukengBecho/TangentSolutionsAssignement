@@ -1,0 +1,54 @@
+﻿<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" ng-controller="StatCtrl">
+    <section class="box ">
+        <header class="panel_header">
+            <h2 class="title pull-left">Quick Stats</h2>
+            <div class="actions panel_actions pull-right">
+                <i class="box_toggle fa fa-chevron-down"></i>
+                <i class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></i>
+                <i class="box_close fa fa-times"></i>
+            </div>
+        </header>
+        <div class="content-body">
+            <div class="row">
+                <form action="#" method="post">
+                    <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+
+                        <div class="form-group">
+                            <label class="form-label" for="field-1">Number of Employees</label>
+                            <span class="desc"></span>
+                            <div class="controls">
+                                <input type="text" value="{{model.NumEmployees}}" class="form-control" id="field-1" readonly disabled="disabled">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+
+                        <div class="form-group">
+                            <label class="form-label" for="field-1">Number of Birthdays Today</label>
+                            <span class="desc"></span>
+                            <div class="controls">
+                                <input type="text" value="{{model.NumBirthdays}}" class="form-control" id="field-1" readonly disabled="disabled">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+
+                        <div class="form-group">
+                            <label class="form-label" for="field-1">Number of Birthdays Within the next 30 days</label>
+                            <span class="desc"></span>
+                            <div class="controls">
+                                <input type="text" value="{{model.NumBirthdaysNext30}}" class="form-control" id="field-1" readonly disabled="disabled">
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</div>
