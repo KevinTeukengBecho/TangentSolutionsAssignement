@@ -16,3 +16,5 @@ some of the scripts and css are not present in the code because they were bundle
 if you wish to view them, you need to install node.js, the navigate through this directory with a command line;
 then type the command npm install.
 all the libraries used for this project will be downloaded and put inside the folder named node-modules.
+
+The starting page for this project is index.html
