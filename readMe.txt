@@ -18,3 +18,5 @@ then type the command npm install.
 all the libraries used for this project will be downloaded and put inside the folder named node-modules.
 
 The starting page for this project is index.html
+
+project is also available on  kbteukeng-002-site2.htempurl.com.
