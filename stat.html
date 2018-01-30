@@ -3,14 +3,12 @@
         <header class="panel_header">
             <h2 class="title pull-left">Quick Stats</h2>
             <div class="actions panel_actions pull-right">
-                <i class="box_toggle fa fa-chevron-down"></i>
-                <i class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></i>
-                <i class="box_close fa fa-times"></i>
             </div>
         </header>
         <div class="content-body">
             <div class="row">
                 <form action="#" method="post">
+                    <!-- Start Number of Employees Statistics -->
                     <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
 
                         <div class="form-group">
@@ -21,6 +19,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End Number of Employees Statistics -->
+
+                    <!-- Start Number of birthdays today Statistics -->
                     <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
 
                         <div class="form-group">
@@ -31,7 +32,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End Number of birthdays today Statistics -->
 
+                    <!-- Start Number of birthdays in next 30 days Statistics -->
                     <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
 
                         <div class="form-group">
@@ -42,6 +45,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End Number of birthdays in next 30 days Statistics -->
                     </form>
             </div>
 
@@ -49,6 +53,27 @@
 
     </section>
 
+    <section class="box ">
+        <header class="panel_header">
+            <h2 class="title pull-left">Gender Stats</h2>
+            <div class="actions panel_actions pull-right">
+            </div>
+        </header>
+        <!-- Start Number of employees per gender-->
+        <div id="genderstats" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+        <!-- End Number of employees per gender-->
+    </section>
 
 
+    <section class="box ">
+        <header class="panel_header">
+            <h2 class="title pull-left">Race Stats</h2>
+            <div class="actions panel_actions pull-right">
+            </div>
+        </header>
+        <!-- Start Number of employees per Race-->
+        <div id="racestats" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+        <!-- End Number of employees per Race-->
+    </section>
+    
 </div>
